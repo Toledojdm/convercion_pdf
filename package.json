@@ -1,0 +1,14 @@
+{
+  "name": "conversion-service",
+  "version": "1.0.0",
+  "description": "Un microservicio para convertir archivos a PDF usando LibreOffice.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "execa": "^8.0.1" 
+  }
+}
