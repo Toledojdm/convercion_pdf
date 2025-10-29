@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8080; // Cloud Run usa 8080
 const UPLOADS_DIR = process.env.UPLOADS_DIR || path.join(os.tmpdir(), 'uploads');
 const MAX_FILE_SIZE = parseInt(process.env.MAX_FILE_SIZE || '26214400', 10); // 25 MB por defecto
 const CONVERSION_TIMEOUT_MS = parseInt(process.env.CONVERSION_TIMEOUT_MS || '180000', 10); // 180s
-const MAX_CONCURRENCY = parseInt(process.env.MAX_CONCURRENCY || '2', 10);
+const MAX_CONCURRENCY = 1;
 
 // Asegura directorio de trabajo
 if (!fsSync.existsSync(UPLOADS_DIR)) {
